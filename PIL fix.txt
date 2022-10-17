@@ -1,0 +1,13 @@
+I fil
+C:\Users\"INDSÆT BRUGER HER"\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\PIL
+
+Ændr funktionen 
+def __del__(self):
+til
+def __del__(self):
+        try:
+            name = self.__photo.name
+            self.__photo.name = None
+            self.__photo.tk.call("image", "delete", name)
+        except Exception:
+            pass  # ignore internal errors
